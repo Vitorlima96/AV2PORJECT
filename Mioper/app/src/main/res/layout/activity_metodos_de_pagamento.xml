@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dinheiroID"
+                android:layout_width="210dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/text_view_dinheiro"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/money2" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listaMetodosPagamentosID"
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:layout_height="299dp" />
+
+        <Button
+            android:id="@+id/adcionarCartaoID"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/botao"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:drawableStart="@drawable/ic_add"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:text="@string/button_adicionar_cartao"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            tools:ignore="MissingConstraints,RtlCompat" />
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
